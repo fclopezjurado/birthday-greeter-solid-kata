@@ -37,6 +37,6 @@ coding-standards-apply: ## Applies coding standards rules fixes
 code-quality: coding-standards static-analysis
 
 security-check: ## Checks security vulnerabilities on the dependencies
-	@$(docker_composer_run) sh -c "vendor/backend-shared/code-quality/src/security-checker"
+	@$(docker_composer_run) sh -c "bin/security-checker"
 
 .DEFAULT_GOAL := help
